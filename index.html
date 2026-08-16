@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Typing Rush</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar retrô fixa com grid -->
+  <nav class="retro-navbar">
+    <div class="nav-left">
+      <a class="navbar-brand neon-text" href="#">Typing Rush</a>
+    </div>
+
+    <div class="nav-center">
+      <ul class="navbar-nav">
+        <li id="abaTelaInicial" class="nav-item active"><a class="nav-link neon-link" href="#">Início</a></li>
+        <li id="abaJogo" class="nav-item"><a class="nav-link neon-link" href="#">Jogo</a></li>
+        <li id="abaRanking" class="nav-item"><a class="nav-link neon-link" href="#">Ranking</a></li>
+        <li id="abaFeedback" class="nav-item"><a class="nav-link neon-link" href="#">Feedback</a></li>
+        <li id="abaEquipe" class="nav-item"><a class="nav-link neon-link" href="#">Equipe</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-right">
+      <span class="projeto-text">Feira Técnica 2025 ---</span>
+    </div>
+  </nav>
+
+  <!-- Tela Inicial -->
+<div id="conteudoTelaInicial" class="conteudo-aba tela-inicial">
+  <div class="bg-stars"></div>
+  <img src="assets/Typing_1.png" alt="Typing Rush" class="tela-logo">
+  <p class="neon-sub">Mostre sua velocidade e domine o ranking!</p>
+
+  <div class="descricao-container">
+    <div class="card-retro">
+      <h2>🎮 Bem-vindo ao Desafio de Digitação!</h2>
+      <p>Este jogo foi desenvolvido no Unity 2D como parte de um projeto da Feira Técnica, unindo tecnologia, aprendizado e diversão em um desafio para testar sua velocidade, reflexos e precisão no teclado.</p>
+      <p>Aqui, cada segundo conta: você terá que digitar corretamente as palavras que aparecem na tela dentro do tempo limite, acumulando pontos e tentando alcançar o topo do ranking online integrado ao site.</p>
+    </div>
+
+    
+
+    <div class="card-retro">
+      <h2>🕹️ Como funciona o jogo</h2>
+      <ul>
+        <li>Cada partida contém 20 palavras.</li>
+        <li>Você terá 10 segundos para digitar cada palavra.</li>
+        <li>Se errar, será preciso digitar a palavra novamente até acertar.</li>
+        <li>Ao acabar o tempo, você recebe um X. Acumule 3 X’s e o jogo termina (Game Over).</li>
+        <li>A cada sequência de acertos, seu multiplicador aumenta até 4x.</li>
+        <li>Existe uma barra especial que, quando cheia, pode ser ativada com Espaço para dobrar temporariamente o multiplicador (até 8x!).</li>
+        <li>Se chegar ao final sem erros, desbloqueia o modo bônus "Hora dos Números", digitando números rapidamente para mais pontos.</li>
+      </ul>
+    </div>
+
+    <div class="card-retro">
+      <h2>⚡ Dificuldades</h2>
+      <ul>
+        <li>🟢 Fácil → Mais tempo, palavras simples. Ideal para iniciantes.</li>
+        <li>🟡 Médio → Tempo moderado e palavras levemente desafiadoras.</li>
+        <li>🔴 Difícil → Menos tempo, palavras complexas. Para quem quer um bom desafio.</li>
+        <li>🟣 Insano → Pouquíssimo tempo, palavras longas e complexas. Apenas para os mais rápidos!</li>
+      </ul>
+      <p>Quanto maior a dificuldade, maior o bônus de pontuação no final.</p>
+    </div>
+
+    <div class="card-retro">
+      <h2>📖 Tutorial rápido</h2>
+      <ul>
+        <li>O jogo começa mostrando a primeira palavra na tela.</li>
+        <li>Digite exatamente como aparece.</li>
+        <li>Continue digitando as próximas palavras.</li>
+        <li>Acerte várias em sequência para aumentar seu multiplicador.</li>
+        <li>Observe a barra especial: quando cheia, pressione Espaço para ativar o Especial.</li>
+        <li>Tente chegar ao final para desbloquear a Hora dos Números.</li>
+      </ul>
+    </div>
+
+    <div class="card-retro">
+      <h2>🏆 Ranking Online</h2>
+      <p>No final da partida, sua pontuação será registrada no ranking integrado ao site. Compare seu desempenho com outros jogadores e tente conquistar o primeiro lugar.</p>
+    </div>
+
+    <div class="card-retro">
+      <h2>👉 Teste seus reflexos!</h2>
+      <p>Supere os desafios, desbloqueie modos bônus e prove que você é o mais rápido no teclado!</p>
+    </div>
+  </div>
+</div>
+
+
+ <!-- Jogo -->
+<div id="conteudoJogo" class="conteudo-aba" style="display:none;">
+  <iframe src="jogo/index.html" class="player"></iframe>
+</div>
+
+<!-- Ranking -->
+<div id="conteudoRanking" class="conteudo-aba" style="display:none;">
+  <iframe src="ranking.php" class="player"></iframe>
+</div>
+
+<!-- Feedback -->
+<div id="conteudoFeedback" class="conteudo-aba" style="display:none;">
+  <iframe src="feedback.php" class="player"></iframe>
+</div>
+
+<!-- Equipe -->
+<div id="conteudoEquipe" class="conteudo-aba" style="display:none;">
+  <!-- conteúdo da equipe -->
+
+
+    <div class="descricao-container">
+      <h2 class="neon-title">👥 Equipe</h2>
+      
+      <div class="card-retro membro">
+        <h3>Carlos Eduardo Rubes Gomes</h3>
+        <p>Contribuição geral ao projeto - 1ºI</p>
+      </div>
+
+      <div class="card-retro membro">
+        <h3>Davi Oliveira da Cunha</h3>
+        <p>Contribuição geral ao projeto e Marketing - 2ºF</p>
+      </div>
+
+      <div class="card-retro membro">
+        <h3>Eduardo Tagliamento Barbosa</h3>
+        <p>Desenvolvimento do site (backend), Integração com banco de dados e Programação do jogo - 2ºH</p>
+      </div>
+
+      <div class="card-retro membro">
+        <h3>Enrico Cabana Nascimento</h3>
+        <p>Desenvolvimento do site (frontend) e Marketing - 2ºF</p>
+      </div>
+
+      <div class="card-retro membro">
+        <h3>Henrique Cruz Dallatorre</h3>
+        <p>Desenvolvimento da fase bônus, Estilização dos gráficos e Pós-processamento do jogo - 2ºH</p>
+      </div>
+
+      <div class="card-retro membro">
+        <h3>Igor Garcez de Oliveira</h3>
+        <p>Programação do jogo - 2ºF</p>
+      </div>
+
+      <div class="card-retro membro">
+        <h3>João Paulo dos Santos Felix</h3>
+        <p>Design visual, Marketing, Programação do jogo - 2ºF</p>
+      </div>
+
+      <div class="card-retro membro">
+        <h3>Leonardo Marques Arielo</h3>
+        <p>Contribuição geral ao projeto - 1ºI</p>
+      </div>
+
+      <div class="card-retro membro">
+        <h3>Petersson Amancio Teixeira Pinto</h3>
+        <p>Programação do jogo - 2ºH</p>
+      </div>
+
+      <div class="card-retro membro">
+        <h3>Vithor Maximus Borges Queiroz</h3>
+        <p>Contribuição geral ao projeto e Desenvolvimento da fase bônus - 2ºH</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script de navegação -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const abas = ["TelaInicial", "Jogo", "Ranking", "Feedback", "Equipe"];
+      abas.forEach(aba => {
+        const li = document.getElementById("aba" + aba);
+        if (!li) return;
+        const link = li.querySelector('.nav-link');
+        if (link) {
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            abas.forEach(a => {
+              const cont = document.getElementById("conteudo" + a);
+              const nav = document.getElementById("aba" + a);
+              if (cont) cont.style.display = "none";
+              if (nav) nav.classList.remove("active");
+            });
+            const show = document.getElementById("conteudo" + aba);
+            const navThis = document.getElementById("aba" + aba);
+            if (show) show.style.display = "block";
+            if (navThis) navThis.classList.add("active");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+create database FeiraTecnica;
+use FeiraTecnica;
+
+create table placar(
+	idJogada int primary key auto_increment,
+    nomeJogador varchar(100),
+    pontos int,
+    tempoJogada time
+);
+
+create table feedback(
+	idFeedback int primary key auto_increment,
+    nomeJogador varchar(100) DEFAULT '',
+    comentario varchar(2000),
+    estrelas float
+);
+
+create table logPlacar(
+	idJogada int primary key auto_increment,
+    nomeJogador varchar(100),
+    pontos int,
+    tempoJogada time,
+    logPlacarDH datetime
+);
+
+create table logFeedback(
+	idFeedback int primary key auto_increment,
+    nomeJogador varchar(100),
+    comentario varchar(2000),
+    logFeedbackDH datetime
+);
+
+DELIMITER $$
+
+create trigger trigger_logPlacar
+after insert on placar
+for each row
+begin 
+	insert into logPlacar(idJogada, nomeJogador, pontos, tempoJogada, logPlacarDH)
+    values (NEW.idJogada, NEW.nomeJogador, NEW.pontos, NEW.tempoJogada, now());
+end$$
+
+DELIMITER ;
+
+DELIMITER $$
+
+create trigger trigger_logFeedback
+after insert on feedback
+for each row
+begin 
+	insert into logFeedback(idFeedback, nomeJogador, comentario, logFeedbackDH)
+    values (NEW.idFeedback, NEW.nomeJogador, NEW.comentario, now());
+end$$
+
+DELIMITER ;
