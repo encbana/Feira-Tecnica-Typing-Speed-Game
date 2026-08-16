@@ -12,7 +12,7 @@ Projeto desenvolvido para a **Feira Técnica 2025 do Colégio Univap**.
 
 ![Jogo](./screenshots/jogo.png)
 ![Ranking](./screenshots/ranking.png)
-![Avaliação](./screenshots/avaliacao.png)
+![Avaliação](./screenshots/feedback.png)
 
 ## 🎮 Sobre o jogo
 
