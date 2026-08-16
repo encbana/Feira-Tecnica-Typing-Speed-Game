@@ -50,16 +50,3 @@ JogoTeclado/
 ├── feedback.php       # Formulário de avaliação
 └── SQL PRA USAR.txt   # Script de criação do banco
 ```
-
-## 👥 Equipe
-
-- Carlos Eduardo Rubes Gomes — Contribuição geral ao projeto
-- Davi Oliveira da Cunha — Contribuição geral ao projeto e Marketing
-- Eduardo Tagliamento Barbosa — Desenvolvimento do site (backend), Integração com banco de dados e Programação do jogo
-- Enrico Cabana Nascimento — Desenvolvimento do site (frontend) e Marketing
-- Henrique Cruz Dallatorre — Desenvolvimento da fase bônus, Estilização dos gráficos e Pós-processamento do jogo
-- Igor Garcez de Oliveira — Programação do jogo
-- João Paulo dos Santos Felix — Design visual, Marketing, Programação do jogo
-- Leonardo Marques Arielo — Contribuição geral ao projeto
-- Petersson Amancio Teixeira Pinto — Programação do jogo
-- Vithor Maximus Borges Queiroz — Contribuição geral ao projeto e Desenvolvimento da fase bônus
